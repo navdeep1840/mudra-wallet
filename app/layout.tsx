@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Mudra Wallet — Effortless Multichain Access in One Place",
     description:
       "Mudra is a lightweight, web-based multichain wallet that lets you connect, switch, and manage assets across blockchains — instantly. No installs, just pure Web3.",
-    images: ["/og-image.png"],
+    images: ["/og-img.png"],
   },
   icons: {
     icon: "/favicon.ico",
