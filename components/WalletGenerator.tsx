@@ -39,8 +39,6 @@ const WalletGenerator = () => {
   }>({});
   const [showSecretPhrase, setShowSecretPhrase] = useState<boolean>(false);
 
-  console.log(wallets, mnemonicWords);
-
   const generateWalletFromMnemonic = (
     pathType: string,
     mnemonic: string,
@@ -170,7 +168,7 @@ const WalletGenerator = () => {
   };
 
   return (
-    <div className="pt-12 text-black px-4">
+    <div className="py-12 text-black px-4">
       {wallets.length === 0 && (
         <div>
           {!selectedPath && (
@@ -232,7 +230,7 @@ const WalletGenerator = () => {
       {mnemonicWords && wallets.length > 0 && (
         <div className="flex flex-col gap-6">
           <div
-            className="border border-black/60 p-6 cursor-pointer"
+            className="border border-black/60 p-4 lg:p-6 cursor-pointer"
             onClick={() => copyToClipboard(mnemonicWords.join(" "))}
           >
             <div className="flex items-center justify-between">
