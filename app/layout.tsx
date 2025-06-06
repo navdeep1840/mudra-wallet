@@ -1,6 +1,10 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Montserrat } from "next/font/google";
+import {
+  Bricolage_Grotesque,
+  Montserrat,
+  Bungee_Shade,
+} from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
@@ -12,6 +16,12 @@ const bricolageGrot = Bricolage_Grotesque({
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+});
+
+const bungeeShade = Bungee_Shade({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -57,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bricolageGrot.variable} ${montserrat.variable} antialiased`}
+        className={`${bricolageGrot.variable} ${montserrat.variable} ${bungeeShade.className} antialiased`}
       >
         <ThemeProvider
           attribute="class"
