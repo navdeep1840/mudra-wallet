@@ -19,7 +19,7 @@ const Footer = () => {
           <Github className="w-5 h-5 text-black" />
         </Link>
         <Link
-          href="https://twitter.com/navdeep1840_"
+          href="https://twitter.com/navdeep1840"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
