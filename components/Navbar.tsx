@@ -1,5 +1,11 @@
 import { Github } from "lucide-react";
+import { Bungee_Shade } from "next/font/google";
 import Link from "next/link";
+
+const bungeeShade = Bungee_Shade({
+  weight: "400", // This specifies the font weight, which can be a numeric value (100-900) or a descriptive value (normal, bold, etc.). In this case, "400" represents a normal font weight. For example, "700" would represent a bold font weight.
+  subsets: ["latin"],
+});
 
 const Navbar = () => {
   return (
@@ -7,14 +13,14 @@ const Navbar = () => {
       <header className="my-4 w-full max-w-7xl flex items-center justify-between px-2 sm:px-4 md:px-8 py-2 sm:py-3 rounded-full backdrop-blur-md bg-white/30 shadow-sm transition-all duration-300 ">
         <div className="cursor-pointer">
           <div className="flex flex-row items-center">
-            <div className="font-black">
+            <Link href={"/"}>
               <h1
                 id="page-logo"
-                className="font-logo text-black text-lg sm:text-xl md:text-2xl whitespace-nowrap"
+                className={` ${bungeeShade.className}  text-black text-lg sm:text-xl md:text-2xl whitespace-nowrap`}
               >
                 Mudra Wallet
               </h1>
-            </div>
+            </Link>
           </div>
         </div>
         <Link
