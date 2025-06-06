@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Mudra is a lightweight, web-based multichain wallet that lets you connect, switch, and manage assets across blockchains — instantly. No installs, just pure Web3.",
     type: "website",
-    url: "https://yourdomain.com",
+    url: "https://mudra-wallet-wine.vercel.app",
     images: [
       {
         url: "/og-img.png",
